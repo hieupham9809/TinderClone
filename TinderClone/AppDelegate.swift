@@ -15,9 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        let launchScreen = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateViewController(withIdentifier: "launchScreen")
-//        window?.rootViewController = launchScreen
+        
+        
+        if #available(iOS 13, *) {
+            
+        } else {
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            let launchScreen = LaunchScreenViewController()
+            
+            self.window!.rootViewController = launchScreen
+            self.window!.makeKeyAndVisible()
+        }
         // Override point for customization after application launch.
         return true
     }

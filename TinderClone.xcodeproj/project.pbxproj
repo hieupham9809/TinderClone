@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30CCFA7CE5A7E39245E34057 /* Pods_TinderCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A650013CF23D541CBA384ED3 /* Pods_TinderCloneTests.framework */; };
 		84606BCB2503F8FB0013BDDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84606BCA2503F8FB0013BDDF /* AppDelegate.swift */; };
 		84606BCD2503F8FB0013BDDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84606BCC2503F8FB0013BDDF /* SceneDelegate.swift */; };
-		84606BCF2503F8FB0013BDDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84606BCE2503F8FB0013BDDF /* ViewController.swift */; };
-		84606BD22503F8FB0013BDDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84606BD02503F8FB0013BDDF /* Main.storyboard */; };
+		84606BCF2503F8FB0013BDDF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84606BCE2503F8FB0013BDDF /* MainViewController.swift */; };
 		84606BD42503F8FB0013BDDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84606BD32503F8FB0013BDDF /* Assets.xcassets */; };
 		84606BD72503F8FB0013BDDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84606BD52503F8FB0013BDDF /* LaunchScreen.storyboard */; };
 		84606BE22503F8FC0013BDDF /* TinderCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84606BE12503F8FC0013BDDF /* TinderCloneTests.swift */; };
 		84609430250493A4008CF3B1 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460942F250493A4008CF3B1 /* LaunchScreenViewController.swift */; };
+		846094322504BFB5008CF3B1 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846094312504BFB5008CF3B1 /* Define.swift */; };
+		846094352504DAED008CF3B1 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846094342504DAED008CF3B1 /* BindableType.swift */; };
+		846094372504DEC4008CF3B1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846094362504DEC4008CF3B1 /* MainViewModel.swift */; };
+		8460943A2504FA7E008CF3B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846094382504FA7E008CF3B1 /* Main.storyboard */; };
+		B538A96A86B6F9ACBC99AB1A /* Pods_TinderClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF157F94749CC84085224FC /* Pods_TinderClone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,11 +33,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C03CFB1A672DA4407E51461 /* Pods-TinderClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderClone.release.xcconfig"; path = "Target Support Files/Pods-TinderClone/Pods-TinderClone.release.xcconfig"; sourceTree = "<group>"; };
+		202D9EABE11681F1992A2404 /* Pods-TinderClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderClone.debug.xcconfig"; path = "Target Support Files/Pods-TinderClone/Pods-TinderClone.debug.xcconfig"; sourceTree = "<group>"; };
 		84606BC72503F8FB0013BDDF /* TinderClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84606BCA2503F8FB0013BDDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84606BCC2503F8FB0013BDDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84606BCE2503F8FB0013BDDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84606BD12503F8FB0013BDDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84606BCE2503F8FB0013BDDF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		84606BD32503F8FB0013BDDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84606BD62503F8FB0013BDDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84606BD82503F8FB0013BDDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +46,14 @@
 		84606BE12503F8FC0013BDDF /* TinderCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderCloneTests.swift; sourceTree = "<group>"; };
 		84606BE32503F8FC0013BDDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8460942F250493A4008CF3B1 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		846094312504BFB5008CF3B1 /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		846094342504DAED008CF3B1 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
+		846094362504DEC4008CF3B1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		846094392504FA7E008CF3B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TinderClone/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98AEE4917FA803BEDCD6FBD3 /* Pods-TinderCloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderCloneTests.release.xcconfig"; path = "Target Support Files/Pods-TinderCloneTests/Pods-TinderCloneTests.release.xcconfig"; sourceTree = "<group>"; };
+		A650013CF23D541CBA384ED3 /* Pods_TinderCloneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderCloneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD4468CB57E1AF31EF86A70 /* Pods-TinderCloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderCloneTests.debug.xcconfig"; path = "Target Support Files/Pods-TinderCloneTests/Pods-TinderCloneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DAF157F94749CC84085224FC /* Pods_TinderClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B538A96A86B6F9ACBC99AB1A /* Pods_TinderClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30CCFA7CE5A7E39245E34057 /* Pods_TinderCloneTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +79,12 @@
 		84606BBE2503F8FB0013BDDF = {
 			isa = PBXGroup;
 			children = (
+				846094382504FA7E008CF3B1 /* Main.storyboard */,
 				84606BC92503F8FB0013BDDF /* TinderClone */,
 				84606BE02503F8FC0013BDDF /* TinderCloneTests */,
 				84606BC82503F8FB0013BDDF /* Products */,
+				BA94AF64B565D67D67F5C610 /* Pods */,
+				E424C2FE8C6CD72C30940882 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,8 +106,6 @@
 				8460942A25047E96008CF3B1 /* Scences */,
 				84606BCA2503F8FB0013BDDF /* AppDelegate.swift */,
 				84606BCC2503F8FB0013BDDF /* SceneDelegate.swift */,
-				84606BCE2503F8FB0013BDDF /* ViewController.swift */,
-				84606BD02503F8FB0013BDDF /* Main.storyboard */,
 				84606BD32503F8FB0013BDDF /* Assets.xcassets */,
 				84606BD52503F8FB0013BDDF /* LaunchScreen.storyboard */,
 				84606BD82503F8FB0013BDDF /* Info.plist */,
@@ -108,6 +125,7 @@
 		8460942A25047E96008CF3B1 /* Scences */ = {
 			isa = PBXGroup;
 			children = (
+				846094332504D940008CF3B1 /* MainViewController */,
 				8460942E2504938F008CF3B1 /* LaunchScreen */,
 			);
 			path = Scences;
@@ -123,6 +141,8 @@
 		8460942C25047EE0008CF3B1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				846094312504BFB5008CF3B1 /* Define.swift */,
+				846094342504DAED008CF3B1 /* BindableType.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -142,6 +162,35 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
+		846094332504D940008CF3B1 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84606BCE2503F8FB0013BDDF /* MainViewController.swift */,
+				846094362504DEC4008CF3B1 /* MainViewModel.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		BA94AF64B565D67D67F5C610 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				202D9EABE11681F1992A2404 /* Pods-TinderClone.debug.xcconfig */,
+				0C03CFB1A672DA4407E51461 /* Pods-TinderClone.release.xcconfig */,
+				BDD4468CB57E1AF31EF86A70 /* Pods-TinderCloneTests.debug.xcconfig */,
+				98AEE4917FA803BEDCD6FBD3 /* Pods-TinderCloneTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E424C2FE8C6CD72C30940882 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAF157F94749CC84085224FC /* Pods_TinderClone.framework */,
+				A650013CF23D541CBA384ED3 /* Pods_TinderCloneTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84606BE62503F8FC0013BDDF /* Build configuration list for PBXNativeTarget "TinderClone" */;
 			buildPhases = (
+				B50267E45073431141ED0B88 /* [CP] Check Pods Manifest.lock */,
 				84606BC32503F8FB0013BDDF /* Sources */,
 				84606BC42503F8FB0013BDDF /* Frameworks */,
 				84606BC52503F8FB0013BDDF /* Resources */,
+				84E8485D3E719F70243EB547 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +217,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84606BE92503F8FC0013BDDF /* Build configuration list for PBXNativeTarget "TinderCloneTests" */;
 			buildPhases = (
+				B44E1A546966A03817FAEADE /* [CP] Check Pods Manifest.lock */,
 				84606BD92503F8FC0013BDDF /* Sources */,
 				84606BDA2503F8FC0013BDDF /* Frameworks */,
 				84606BDB2503F8FC0013BDDF /* Resources */,
@@ -223,9 +275,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8460943A2504FA7E008CF3B1 /* Main.storyboard in Resources */,
 				84606BD72503F8FB0013BDDF /* LaunchScreen.storyboard in Resources */,
 				84606BD42503F8FB0013BDDF /* Assets.xcassets in Resources */,
-				84606BD22503F8FB0013BDDF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,14 +290,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		84E8485D3E719F70243EB547 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinderClone/Pods-TinderClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinderClone/Pods-TinderClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinderClone/Pods-TinderClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B44E1A546966A03817FAEADE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinderCloneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B50267E45073431141ED0B88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinderClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84606BC32503F8FB0013BDDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84606BCF2503F8FB0013BDDF /* ViewController.swift in Sources */,
+				846094372504DEC4008CF3B1 /* MainViewModel.swift in Sources */,
+				84606BCF2503F8FB0013BDDF /* MainViewController.swift in Sources */,
 				84606BCB2503F8FB0013BDDF /* AppDelegate.swift in Sources */,
 				84609430250493A4008CF3B1 /* LaunchScreenViewController.swift in Sources */,
+				846094322504BFB5008CF3B1 /* Define.swift in Sources */,
+				846094352504DAED008CF3B1 /* BindableType.swift in Sources */,
 				84606BCD2503F8FB0013BDDF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,20 +388,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		84606BD02503F8FB0013BDDF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84606BD12503F8FB0013BDDF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		84606BD52503F8FB0013BDDF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				84606BD62503F8FB0013BDDF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		846094382504FA7E008CF3B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846094392504FA7E008CF3B1 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -404,6 +523,7 @@
 		};
 		84606BE72503F8FC0013BDDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 202D9EABE11681F1992A2404 /* Pods-TinderClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -423,6 +543,7 @@
 		};
 		84606BE82503F8FC0013BDDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C03CFB1A672DA4407E51461 /* Pods-TinderClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +563,7 @@
 		};
 		84606BEA2503F8FC0013BDDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDD4468CB57E1AF31EF86A70 /* Pods-TinderCloneTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +586,7 @@
 		};
 		84606BEB2503F8FC0013BDDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98AEE4917FA803BEDCD6FBD3 /* Pods-TinderCloneTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

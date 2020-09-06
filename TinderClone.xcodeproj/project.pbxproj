@@ -14,6 +14,7 @@
 		84606BD42503F8FB0013BDDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84606BD32503F8FB0013BDDF /* Assets.xcassets */; };
 		84606BD72503F8FB0013BDDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84606BD52503F8FB0013BDDF /* LaunchScreen.storyboard */; };
 		84606BE22503F8FC0013BDDF /* TinderCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84606BE12503F8FC0013BDDF /* TinderCloneTests.swift */; };
+		84609430250493A4008CF3B1 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460942F250493A4008CF3B1 /* LaunchScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		84606BDD2503F8FC0013BDDF /* TinderCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinderCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84606BE12503F8FC0013BDDF /* TinderCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderCloneTests.swift; sourceTree = "<group>"; };
 		84606BE32503F8FC0013BDDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8460942F250493A4008CF3B1 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,10 @@
 		84606BC92503F8FB0013BDDF /* TinderClone */ = {
 			isa = PBXGroup;
 			children = (
+				8460942D25047EE7008CF3B1 /* Domain */,
+				8460942C25047EE0008CF3B1 /* Utils */,
+				8460942B25047ED4008CF3B1 /* Platform */,
+				8460942A25047E96008CF3B1 /* Scences */,
 				84606BCA2503F8FB0013BDDF /* AppDelegate.swift */,
 				84606BCC2503F8FB0013BDDF /* SceneDelegate.swift */,
 				84606BCE2503F8FB0013BDDF /* ViewController.swift */,
@@ -97,6 +103,43 @@
 				84606BE32503F8FC0013BDDF /* Info.plist */,
 			);
 			path = TinderCloneTests;
+			sourceTree = "<group>";
+		};
+		8460942A25047E96008CF3B1 /* Scences */ = {
+			isa = PBXGroup;
+			children = (
+				8460942E2504938F008CF3B1 /* LaunchScreen */,
+			);
+			path = Scences;
+			sourceTree = "<group>";
+		};
+		8460942B25047ED4008CF3B1 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		8460942C25047EE0008CF3B1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8460942D25047EE7008CF3B1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		8460942E2504938F008CF3B1 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8460942F250493A4008CF3B1 /* LaunchScreenViewController.swift */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +245,7 @@
 			files = (
 				84606BCF2503F8FB0013BDDF /* ViewController.swift in Sources */,
 				84606BCB2503F8FB0013BDDF /* AppDelegate.swift in Sources */,
+				84609430250493A4008CF3B1 /* LaunchScreenViewController.swift in Sources */,
 				84606BCD2503F8FB0013BDDF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +409,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5P7HK39AN;
 				INFOPLIST_FILE = TinderClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,6 +428,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5P7HK39AN;
 				INFOPLIST_FILE = TinderClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

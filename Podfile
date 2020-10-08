@@ -8,6 +8,7 @@ target 'TinderClone' do
   # Pods for TinderClone
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
+  pod 'Kingfisher', '~> 5.0'
   
   target 'TinderCloneTests' do
     inherit! :search_paths

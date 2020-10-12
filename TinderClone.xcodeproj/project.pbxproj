@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		30CCFA7CE5A7E39245E34057 /* Pods_TinderCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A650013CF23D541CBA384ED3 /* Pods_TinderCloneTests.framework */; };
+		845B94C02533466200BC83A0 /* CustomUISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B94BF2533466200BC83A0 /* CustomUISwitch.swift */; };
+		845B94C2253351B700BC83A0 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B94C1253351B700BC83A0 /* UIImageExtension.swift */; };
 		845C15692506959000C9AD46 /* TabbarControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C15682506959000C9AD46 /* TabbarControllerView.swift */; };
 		845C156C25069A4200C9AD46 /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C156B25069A4200C9AD46 /* IconCell.swift */; };
 		845C156E25069A5600C9AD46 /* SwitchableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C156D25069A5600C9AD46 /* SwitchableCell.swift */; };
@@ -23,6 +25,8 @@
 		846094352504DAED008CF3B1 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846094342504DAED008CF3B1 /* BindableType.swift */; };
 		846094372504DEC4008CF3B1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846094362504DEC4008CF3B1 /* MainViewModel.swift */; };
 		8460943A2504FA7E008CF3B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846094382504FA7E008CF3B1 /* Main.storyboard */; };
+		84639C2B253218D900BA5592 /* SwipeControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84639C2A253218D900BA5592 /* SwipeControlView.swift */; };
+		84639C2D253218E600BA5592 /* SwipeControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84639C2C253218E600BA5592 /* SwipeControlView.xib */; };
 		84652055252F71EC00234893 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84652054252F71EC00234893 /* UIColorExtension.swift */; };
 		846CCB342519086600B45F00 /* SwipeableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CCB332519086600B45F00 /* SwipeableViewController.swift */; };
 		846CCB362519087800B45F00 /* SwipeableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CCB352519087800B45F00 /* SwipeableViewModel.swift */; };
@@ -44,6 +48,8 @@
 /* Begin PBXFileReference section */
 		0C03CFB1A672DA4407E51461 /* Pods-TinderClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderClone.release.xcconfig"; path = "Target Support Files/Pods-TinderClone/Pods-TinderClone.release.xcconfig"; sourceTree = "<group>"; };
 		202D9EABE11681F1992A2404 /* Pods-TinderClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderClone.debug.xcconfig"; path = "Target Support Files/Pods-TinderClone/Pods-TinderClone.debug.xcconfig"; sourceTree = "<group>"; };
+		845B94BF2533466200BC83A0 /* CustomUISwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUISwitch.swift; sourceTree = "<group>"; };
+		845B94C1253351B700BC83A0 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		845C15682506959000C9AD46 /* TabbarControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarControllerView.swift; sourceTree = "<group>"; };
 		845C156B25069A4200C9AD46 /* IconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
 		845C156D25069A5600C9AD46 /* SwitchableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchableCell.swift; sourceTree = "<group>"; };
@@ -63,6 +69,8 @@
 		846094342504DAED008CF3B1 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
 		846094362504DEC4008CF3B1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		846094392504FA7E008CF3B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TinderClone/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84639C2A253218D900BA5592 /* SwipeControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeControlView.swift; sourceTree = "<group>"; };
+		84639C2C253218E600BA5592 /* SwipeControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeControlView.xib; sourceTree = "<group>"; };
 		84652054252F71EC00234893 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		846CCB332519086600B45F00 /* SwipeableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableViewController.swift; sourceTree = "<group>"; };
 		846CCB352519087800B45F00 /* SwipeableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableViewModel.swift; sourceTree = "<group>"; };
@@ -94,9 +102,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		845B94BE2533461700BC83A0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				845B94BF2533466200BC83A0 /* CustomUISwitch.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		845C15652506951F00C9AD46 /* TabbarController */ = {
 			isa = PBXGroup;
 			children = (
+				845B94BE2533461700BC83A0 /* Utils */,
 				845C156A250699FF00C9AD46 /* Cells */,
 				845C15682506959000C9AD46 /* TabbarControllerView.swift */,
 			);
@@ -116,6 +133,7 @@
 		845C15672506955E00C9AD46 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				84639C292532172B00BA5592 /* SwipeControlView */,
 				845C8B7D251A5CCE00B0BE2C /* SwipeInfoView */,
 				845C15652506951F00C9AD46 /* TabbarController */,
 			);
@@ -237,10 +255,20 @@
 			path = MainViewController;
 			sourceTree = "<group>";
 		};
+		84639C292532172B00BA5592 /* SwipeControlView */ = {
+			isa = PBXGroup;
+			children = (
+				84639C2A253218D900BA5592 /* SwipeControlView.swift */,
+				84639C2C253218E600BA5592 /* SwipeControlView.xib */,
+			);
+			path = SwipeControlView;
+			sourceTree = "<group>";
+		};
 		84652053252F71D100234893 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				84652054252F71EC00234893 /* UIColorExtension.swift */,
+				845B94C1253351B700BC83A0 /* UIImageExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -367,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8460943A2504FA7E008CF3B1 /* Main.storyboard in Resources */,
+				84639C2D253218E600BA5592 /* SwipeControlView.xib in Resources */,
 				84606BD72503F8FB0013BDDF /* LaunchScreen.storyboard in Resources */,
 				84606BD42503F8FB0013BDDF /* Assets.xcassets in Resources */,
 			);
@@ -451,16 +480,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				845C15692506959000C9AD46 /* TabbarControllerView.swift in Sources */,
+				84639C2B253218D900BA5592 /* SwipeControlView.swift in Sources */,
 				846094372504DEC4008CF3B1 /* MainViewModel.swift in Sources */,
 				845C156C25069A4200C9AD46 /* IconCell.swift in Sources */,
 				845C156E25069A5600C9AD46 /* SwitchableCell.swift in Sources */,
 				846CCB382519097600B45F00 /* DataStructures.swift in Sources */,
 				846CCB342519086600B45F00 /* SwipeableViewController.swift in Sources */,
 				84606BCF2503F8FB0013BDDF /* MainViewController.swift in Sources */,
+				845B94C02533466200BC83A0 /* CustomUISwitch.swift in Sources */,
 				845C8B7F251A5CD900B0BE2C /* SwipeInfoView.swift in Sources */,
 				84606BCB2503F8FB0013BDDF /* AppDelegate.swift in Sources */,
 				846CCB3B25190AC600B45F00 /* SwipeableProfile.swift in Sources */,
 				84609430250493A4008CF3B1 /* LaunchScreenViewController.swift in Sources */,
+				845B94C2253351B700BC83A0 /* UIImageExtension.swift in Sources */,
 				84652055252F71EC00234893 /* UIColorExtension.swift in Sources */,
 				846094322504BFB5008CF3B1 /* Define.swift in Sources */,
 				846094352504DAED008CF3B1 /* BindableType.swift in Sources */,

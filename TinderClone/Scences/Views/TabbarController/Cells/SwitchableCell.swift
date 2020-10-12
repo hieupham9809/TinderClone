@@ -8,6 +8,75 @@
 
 import UIKit
 
-class SwitchableCell: UICollectionViewCell {
-    
+class SwitchableCell: IconCell {
+   
+   var switchMode: TinderUISwitch?
+   var isOnSwipeMode: Bool = true
+   
+   override func setupViews() {
+      super.setupViews()
+      setupSwitch()
+   }
+   
+   override func createViews() {
+      super.createViews()
+      createSwitch()
+   }
+   
+   func createSwitch() {
+      switchMode = TinderUISwitch()
+      switchMode?.borderWidth = 0
+      switchMode?.offTintColor = UIColor.myGrayBackground()
+      switchMode?.onTintColor = UIColor.myGrayBackground()
+      switchMode?.isHidden = true
+      switchMode?.offImage = UIImage.getTabbarLikedModeIcon()?
+      .withRenderingMode(.alwaysTemplate).cgImage
+      switchMode?.onImage = UIImage.getTabbarDatingIcon()?
+      .withRenderingMode(.alwaysTemplate).cgImage
+      switchMode?.addTarget(self, action: #selector(handleSwitchChangeState(sender:)), for: .valueChanged)
+      self.contentView.addSubview(switchMode!)
+   }
+   
+   func setupSwitch() {
+      switchMode?.center = iconImageView?.center ?? .zero
+   }
+   
+   override func setActiveState() {
+      super.setActiveState()
+      iconImageView?.isHidden = true
+      switchMode?.isHidden = false
+      
+      if isOnSwipeMode {
+         setOnSwipeMode()
+      } else {
+         setOnLikedMode()
+      }
+   }
+   
+   override func setInactiveState() {
+      super.setInactiveState()
+      iconImageView?.isHidden = false
+      switchMode?.isHidden = true
+   }
+   
+   func setOnSwipeMode() {
+      
+      switchMode?.thumbImage = UIImage.getTabbarDatingIcon()?.cgImage
+   }
+   
+   func setOnLikedMode() {
+      
+      switchMode?.thumbImage = UIImage.getTabbarLikedModeIcon()?
+         .tinted(with: UIColor.myMainYellowColor())?.cgImage
+   }
+   
+   @objc func handleSwitchChangeState(sender: TinderUISwitch) {
+      
+      isOnSwipeMode = !sender.isOn
+      if sender.isOn {
+         setOnLikedMode()
+      } else {
+         setOnSwipeMode()
+      }
+   }
 }

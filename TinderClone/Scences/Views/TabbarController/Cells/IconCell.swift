@@ -38,8 +38,8 @@ class IconCell: UICollectionViewCell {
       self.contentView.addSubview(self.iconImageView)
    }
    
-   func setImageForIcon(withName name : String) {
-      iconImageView.image = UIImage(named: name)?.withRenderingMode(.alwaysTemplate)
+   func setImageForIcon(image: UIImage?) {
+      iconImageView.image = image?.withRenderingMode(.alwaysTemplate)
    }
    
    func setupViews() {

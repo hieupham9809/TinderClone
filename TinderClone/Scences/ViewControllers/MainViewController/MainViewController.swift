@@ -49,8 +49,10 @@ class MainViewController: UIViewController, BindableType {
    
    func configScrollView() {
       guard let viewModel = self.viewModel else {return}
+      let tabbarMaxYValue = mainTabbar?.frame.maxY ?? 0
       let scrollViewWidth = self.mainTabbar.bounds.size.width
-      let scrollViewHeight = scrollViewWidth * 4 / 3
+      let scrollViewHeight = self.view.bounds.size.height
+         - tabbarMaxYValue
       
       self.scrollView = UIScrollView(frame: CGRect(x: 0, y: self.mainTabbar.frame.maxY, width: scrollViewWidth, height: scrollViewHeight))
       self.scrollView.contentSize = CGSize(width: CGFloat(viewModel.vcCount) * scrollViewWidth, height: scrollViewHeight)
@@ -79,7 +81,7 @@ class MainViewController: UIViewController, BindableType {
                y: 0,
                width: scrollViewWidth,
                height: scrollViewHeight)
-            (vc as? SwipeableViewController)?.setupFrontAndBackView()
+            (vc as? SwipeableViewController)?.setupViews()
             self.addChild(vc)
             self.scrollView.addSubview(vc.view)
             vc.willMove(toParent: self)

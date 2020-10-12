@@ -95,15 +95,15 @@ extension TabbarControllerView : UICollectionViewDelegate, UICollectionViewDataS
          let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: IconCellTypeIdentifier,
             for: indexPath) as! IconCell
-         cell.setImageForIcon(withName: "tabbarUserIcon")
+         cell.setImageForIcon(image: UIImage.getTabbarUserIcon())
          return cell
       case mainIndex:
-         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: IconCellTypeIdentifier, for: indexPath) as! IconCell
-         cell.setImageForIcon(withName: "tabbarShineIcon")
+         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: switchableCellTypeIdentifier, for: indexPath) as! SwitchableCell
+         cell.setImageForIcon(image: UIImage.getTabbarDatingIcon())
          return cell
       case messageIndex:
          let cell = collectionView.dequeueReusableCell(withReuseIdentifier: IconCellTypeIdentifier, for: indexPath) as! IconCell
-         cell.setImageForIcon(withName: "tabbarMessagesIcon")
+         cell.setImageForIcon(image: UIImage.getTabbarMessageIcon())
          return cell
       default:
          break

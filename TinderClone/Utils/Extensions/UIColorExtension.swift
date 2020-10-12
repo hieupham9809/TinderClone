@@ -34,4 +34,16 @@ extension UIColor {
    static func myMainGrayColor() -> UIColor {
       UIColor(hexString: "#acb2b4FF")
    }
+   
+   static func myMainYellowColor() -> UIColor {
+      UIColor(hexString: "#E6A64DFF")
+   }
+   
+   static func myBackgroundColor() -> UIColor {
+      UIColor.init(hexString: "#FFF7F7FF")
+   }
+   
+   static func myGrayBackground() -> UIColor {
+      UIColor.init(hexString: "#F2F3F7FF")
+   }
 }

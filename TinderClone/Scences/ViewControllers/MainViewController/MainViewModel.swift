@@ -29,7 +29,7 @@ class MainViewModel {
       let swipeableVC = SwipeableViewController()
       let swipeableVM = SwipeableViewModel()
       swipeableVC.bind(to: swipeableVM)
-      swipeableVC.view.backgroundColor = UIColor.red
+
       listViewController.append(swipeableVC)
       
       let vc3 = UIViewController()

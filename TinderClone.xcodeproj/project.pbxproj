@@ -14,6 +14,10 @@
 		845C156C25069A4200C9AD46 /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C156B25069A4200C9AD46 /* IconCell.swift */; };
 		845C156E25069A5600C9AD46 /* SwitchableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C156D25069A5600C9AD46 /* SwitchableCell.swift */; };
 		845C8B7F251A5CD900B0BE2C /* SwipeInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C8B7E251A5CD900B0BE2C /* SwipeInfoView.swift */; };
+		845CB9732535FC9700ABF8B0 /* MyLikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845CB9722535FC9700ABF8B0 /* MyLikesViewController.swift */; };
+		845CB9752535FCA300ABF8B0 /* MyLikesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845CB9742535FCA300ABF8B0 /* MyLikesViewModel.swift */; };
+		845CB97C2536044E00ABF8B0 /* MyLikesTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845CB97B2536044E00ABF8B0 /* MyLikesTabBar.swift */; };
+		845CB97F253608C400ABF8B0 /* SwipeableViewControllerMyLikesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845CB97E253608C400ABF8B0 /* SwipeableViewControllerMyLikesExtension.swift */; };
 		84606BCB2503F8FB0013BDDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84606BCA2503F8FB0013BDDF /* AppDelegate.swift */; };
 		84606BCD2503F8FB0013BDDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84606BCC2503F8FB0013BDDF /* SceneDelegate.swift */; };
 		84606BCF2503F8FB0013BDDF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84606BCE2503F8FB0013BDDF /* MainViewController.swift */; };
@@ -32,6 +36,9 @@
 		846CCB362519087800B45F00 /* SwipeableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CCB352519087800B45F00 /* SwipeableViewModel.swift */; };
 		846CCB382519097600B45F00 /* DataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CCB372519097600B45F00 /* DataStructures.swift */; };
 		846CCB3B25190AC600B45F00 /* SwipeableProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CCB3A25190AC600B45F00 /* SwipeableProfile.swift */; };
+		84AB5D1125487DD700891400 /* SimpleSegmentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AB5D1025487DD700891400 /* SimpleSegmentationView.swift */; };
+		84AB5D132548807800891400 /* TinderSegmentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AB5D122548807800891400 /* TinderSegmentationView.swift */; };
+		84AB5D15254880E200891400 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AB5D14254880E200891400 /* UIFontExtension.swift */; };
 		B538A96A86B6F9ACBC99AB1A /* Pods_TinderClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF157F94749CC84085224FC /* Pods_TinderClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +61,10 @@
 		845C156B25069A4200C9AD46 /* IconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
 		845C156D25069A5600C9AD46 /* SwitchableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchableCell.swift; sourceTree = "<group>"; };
 		845C8B7E251A5CD900B0BE2C /* SwipeInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeInfoView.swift; sourceTree = "<group>"; };
+		845CB9722535FC9700ABF8B0 /* MyLikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLikesViewController.swift; sourceTree = "<group>"; };
+		845CB9742535FCA300ABF8B0 /* MyLikesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLikesViewModel.swift; sourceTree = "<group>"; };
+		845CB97B2536044E00ABF8B0 /* MyLikesTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLikesTabBar.swift; sourceTree = "<group>"; };
+		845CB97E253608C400ABF8B0 /* SwipeableViewControllerMyLikesExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableViewControllerMyLikesExtension.swift; sourceTree = "<group>"; };
 		84606BC72503F8FB0013BDDF /* TinderClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84606BCA2503F8FB0013BDDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84606BCC2503F8FB0013BDDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +87,9 @@
 		846CCB352519087800B45F00 /* SwipeableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableViewModel.swift; sourceTree = "<group>"; };
 		846CCB372519097600B45F00 /* DataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructures.swift; sourceTree = "<group>"; };
 		846CCB3A25190AC600B45F00 /* SwipeableProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableProfile.swift; sourceTree = "<group>"; };
+		84AB5D1025487DD700891400 /* SimpleSegmentationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleSegmentationView.swift; sourceTree = "<group>"; };
+		84AB5D122548807800891400 /* TinderSegmentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderSegmentationView.swift; sourceTree = "<group>"; };
+		84AB5D14254880E200891400 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		98AEE4917FA803BEDCD6FBD3 /* Pods-TinderCloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderCloneTests.release.xcconfig"; path = "Target Support Files/Pods-TinderCloneTests/Pods-TinderCloneTests.release.xcconfig"; sourceTree = "<group>"; };
 		A650013CF23D541CBA384ED3 /* Pods_TinderCloneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderCloneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD4468CB57E1AF31EF86A70 /* Pods-TinderCloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderCloneTests.debug.xcconfig"; path = "Target Support Files/Pods-TinderCloneTests/Pods-TinderCloneTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +137,7 @@
 		845C15662506955500C9AD46 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				845CB9712535FC5E00ABF8B0 /* MyLikesViewController */,
 				846CCB32251906EE00B45F00 /* SwipeableViewController */,
 				8460942E2504938F008CF3B1 /* LaunchScreen */,
 				846094332504D940008CF3B1 /* MainViewController */,
@@ -133,6 +148,8 @@
 		845C15672506955E00C9AD46 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				84AB5D0F25487DC400891400 /* TinderSegmentationView */,
+				845CB978253600B800ABF8B0 /* MyLikesViews */,
 				84639C292532172B00BA5592 /* SwipeControlView */,
 				845C8B7D251A5CCE00B0BE2C /* SwipeInfoView */,
 				845C15652506951F00C9AD46 /* TabbarController */,
@@ -155,6 +172,47 @@
 				845C8B7E251A5CD900B0BE2C /* SwipeInfoView.swift */,
 			);
 			path = SwipeInfoView;
+			sourceTree = "<group>";
+		};
+		845CB9712535FC5E00ABF8B0 /* MyLikesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				845CB9722535FC9700ABF8B0 /* MyLikesViewController.swift */,
+				845CB9742535FCA300ABF8B0 /* MyLikesViewModel.swift */,
+			);
+			path = MyLikesViewController;
+			sourceTree = "<group>";
+		};
+		845CB978253600B800ABF8B0 /* MyLikesViews */ = {
+			isa = PBXGroup;
+			children = (
+				845CB97D2536059D00ABF8B0 /* MyLikesTabBar */,
+				845CB979253600E900ABF8B0 /* MyLikesCollectionView */,
+			);
+			path = MyLikesViews;
+			sourceTree = "<group>";
+		};
+		845CB979253600E900ABF8B0 /* MyLikesCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				845CB97A2536010A00ABF8B0 /* Cell */,
+			);
+			path = MyLikesCollectionView;
+			sourceTree = "<group>";
+		};
+		845CB97A2536010A00ABF8B0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		845CB97D2536059D00ABF8B0 /* MyLikesTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				845CB97B2536044E00ABF8B0 /* MyLikesTabBar.swift */,
+			);
+			path = MyLikesTabBar;
 			sourceTree = "<group>";
 		};
 		84606BBE2503F8FB0013BDDF = {
@@ -269,6 +327,7 @@
 			children = (
 				84652054252F71EC00234893 /* UIColorExtension.swift */,
 				845B94C1253351B700BC83A0 /* UIImageExtension.swift */,
+				84AB5D14254880E200891400 /* UIFontExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -278,6 +337,7 @@
 			children = (
 				846CCB332519086600B45F00 /* SwipeableViewController.swift */,
 				846CCB352519087800B45F00 /* SwipeableViewModel.swift */,
+				845CB97E253608C400ABF8B0 /* SwipeableViewControllerMyLikesExtension.swift */,
 			);
 			path = SwipeableViewController;
 			sourceTree = "<group>";
@@ -288,6 +348,15 @@
 				846CCB3A25190AC600B45F00 /* SwipeableProfile.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		84AB5D0F25487DC400891400 /* TinderSegmentationView */ = {
+			isa = PBXGroup;
+			children = (
+				84AB5D1025487DD700891400 /* SimpleSegmentationView.swift */,
+				84AB5D122548807800891400 /* TinderSegmentationView.swift */,
+			);
+			path = TinderSegmentationView;
 			sourceTree = "<group>";
 		};
 		BA94AF64B565D67D67F5C610 /* Pods */ = {
@@ -479,25 +548,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845CB97C2536044E00ABF8B0 /* MyLikesTabBar.swift in Sources */,
 				845C15692506959000C9AD46 /* TabbarControllerView.swift in Sources */,
+				84AB5D132548807800891400 /* TinderSegmentationView.swift in Sources */,
 				84639C2B253218D900BA5592 /* SwipeControlView.swift in Sources */,
 				846094372504DEC4008CF3B1 /* MainViewModel.swift in Sources */,
 				845C156C25069A4200C9AD46 /* IconCell.swift in Sources */,
 				845C156E25069A5600C9AD46 /* SwitchableCell.swift in Sources */,
 				846CCB382519097600B45F00 /* DataStructures.swift in Sources */,
+				845CB9752535FCA300ABF8B0 /* MyLikesViewModel.swift in Sources */,
 				846CCB342519086600B45F00 /* SwipeableViewController.swift in Sources */,
 				84606BCF2503F8FB0013BDDF /* MainViewController.swift in Sources */,
 				845B94C02533466200BC83A0 /* CustomUISwitch.swift in Sources */,
+				84AB5D15254880E200891400 /* UIFontExtension.swift in Sources */,
 				845C8B7F251A5CD900B0BE2C /* SwipeInfoView.swift in Sources */,
 				84606BCB2503F8FB0013BDDF /* AppDelegate.swift in Sources */,
 				846CCB3B25190AC600B45F00 /* SwipeableProfile.swift in Sources */,
 				84609430250493A4008CF3B1 /* LaunchScreenViewController.swift in Sources */,
+				845CB97F253608C400ABF8B0 /* SwipeableViewControllerMyLikesExtension.swift in Sources */,
 				845B94C2253351B700BC83A0 /* UIImageExtension.swift in Sources */,
 				84652055252F71EC00234893 /* UIColorExtension.swift in Sources */,
+				84AB5D1125487DD700891400 /* SimpleSegmentationView.swift in Sources */,
 				846094322504BFB5008CF3B1 /* Define.swift in Sources */,
 				846094352504DAED008CF3B1 /* BindableType.swift in Sources */,
 				84606BCD2503F8FB0013BDDF /* SceneDelegate.swift in Sources */,
 				846CCB362519087800B45F00 /* SwipeableViewModel.swift in Sources */,
+				845CB9732535FC9700ABF8B0 /* MyLikesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

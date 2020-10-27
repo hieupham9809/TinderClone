@@ -8,10 +8,17 @@
 
 import UIKit
 
+protocol SwitchModeDelegate: class {
+   func selectedSwipeMode()
+   func selectedMyLikesMode()
+}
+
 class SwitchableCell: IconCell {
    
    var switchMode: TinderUISwitch?
    var isOnSwipeMode: Bool = true
+   
+   weak var switchModeDelegate: SwitchModeDelegate?
    
    override func setupViews() {
       super.setupViews()
@@ -75,8 +82,10 @@ class SwitchableCell: IconCell {
       isOnSwipeMode = !sender.isOn
       if sender.isOn {
          setOnLikedMode()
+         switchModeDelegate?.selectedMyLikesMode()
       } else {
          setOnSwipeMode()
+         switchModeDelegate?.selectedSwipeMode()
       }
    }
 }

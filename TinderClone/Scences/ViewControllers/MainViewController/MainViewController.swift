@@ -19,8 +19,8 @@ class MainViewController: UIViewController, BindableType {
    override func viewDidLoad() {
       super.viewDidLoad()
       // Do any additional setup after loading the view.
-      setupUI()
-      configMainTabbarView()
+      
+      
       
       
    }
@@ -31,12 +31,15 @@ class MainViewController: UIViewController, BindableType {
    
    func setupUI() {
       self.view.backgroundColor = UIColor.white
+      configMainTabbarView()
+      configScrollView()
+      
    }
    
    func bindViewModel() {
       guard let viewModel = self.viewModel else {return}
       viewModel.initSubViewControllers()
-      configScrollView()
+      setupUI()
    }
    
    func configMainTabbarView() {
@@ -81,10 +84,14 @@ class MainViewController: UIViewController, BindableType {
                y: 0,
                width: scrollViewWidth,
                height: scrollViewHeight)
-            (vc as? SwipeableViewController)?.setupViews()
+            if let swipeableVC = vc as? SwipeableViewController {
+               swipeableVC.setupViews()
+               mainTabbar?.switchModeDelegate = swipeableVC
+            }
             self.addChild(vc)
             self.scrollView.addSubview(vc.view)
             vc.willMove(toParent: self)
+            
          }
       }
    }

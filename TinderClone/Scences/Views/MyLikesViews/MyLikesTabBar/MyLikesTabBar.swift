@@ -1,18 +1,14 @@
 //
-//  TabbarControllerView.swift
+//  MyLikesTabBar.swift
 //  TinderClone
 //
-//  Created by HieuPM on 9/7/20.
+//  Created by HieuPM on 10/13/20.
 //  Copyright © 2020 HieuPM. All rights reserved.
 //
 
 import UIKit
 
-protocol TabbarSelectedDelegate: class {
-   func selectedCell(at index: Int)
-}
-
-class TabbarControllerView : UIView {
+class MyLikesTabBar: UIView {
    
    var collectionView : UICollectionView!
    let numberOfTab = 3
@@ -23,12 +19,6 @@ class TabbarControllerView : UIView {
    let messageIndex = 2
    
    weak var delegate: TabbarSelectedDelegate?
-   weak var switchModeDelegate: SwitchModeDelegate? {
-      didSet {
-         (getCell(at: mainIndex) as? SwitchableCell)?.switchModeDelegate
-         = switchModeDelegate
-      }
-   }
    
    override init(frame: CGRect) {
       super.init(frame: frame)
@@ -84,7 +74,7 @@ class TabbarControllerView : UIView {
    
 }
 
-extension TabbarControllerView : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension MyLikesTabBar : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
       return numberOfTab
    }
@@ -106,7 +96,6 @@ extension TabbarControllerView : UICollectionViewDelegate, UICollectionViewDataS
       case mainIndex:
          let cell = collectionView.dequeueReusableCell(withReuseIdentifier: switchableCellTypeIdentifier, for: indexPath) as! SwitchableCell
          cell.setImageForIcon(image: UIImage.getTabbarDatingIcon())
-         cell.switchModeDelegate = switchModeDelegate
          return cell
       case messageIndex:
          let cell = collectionView.dequeueReusableCell(withReuseIdentifier: IconCellTypeIdentifier, for: indexPath) as! IconCell
@@ -133,3 +122,5 @@ extension TabbarControllerView : UICollectionViewDelegate, UICollectionViewDataS
    }
    
 }
+
+
